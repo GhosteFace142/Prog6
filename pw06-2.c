@@ -6,8 +6,8 @@
 int main()
 {
     setlocale(LC_ALL, "");
-    wchar_t a,b; int k = 0;
-    while((a = getwchar()) && a != L'#')
+    wchar_t a, b = getwchar(); int k = 0;
+    while((a = getwchar()) != EOF && a != L'#')
     {
         if ((wchar_t)a < b)
         {
