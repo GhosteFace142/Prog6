@@ -6,13 +6,12 @@
 int main()
 {
     setlocale(LC_ALL, "");
-    wchar_t a, b = getwchar(); int k = 0;
+    wchar_t a, b = getwchar();
     while((a = getwchar()) != EOF && a != L'#')
     {
         if ((wchar_t)a < b)
         {
             b = (wchar_t)a;
-            k = 1;
         }
     }
     wprintf(L"MinCode:%d (0x%X)\n", (int)b, (int)b);
