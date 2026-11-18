@@ -7,7 +7,7 @@ int main()
     {
         if(a == 'i' && b == 'f')
         k++;
-        b = a;
+        a = b;
     }
     printf("%d\n", k);
     return 0;
